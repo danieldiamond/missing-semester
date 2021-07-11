@@ -24,6 +24,7 @@ Notes from the [MIT Missing Semester 2020 Course](https://missing.csail.mit.edu/
 5. [Command Line Environment](#5-command-line-environment)
     - [Job Control](#job-control)
     - [Pausing and backgrounding processes](#pausing-and-backgrounding-processes)
+    - [Shortcuts](#shortcuts)
     - [Terminal Multiplexers](#terminal-multiplexers)
     - [Aliases](#aliases)
     - [Dotfiles and Portability](#dotfiles-and-portability)
