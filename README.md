@@ -24,6 +24,7 @@ Notes from the [MIT Missing Semester 2020 Course](https://missing.csail.mit.edu/
 5. [Command Line Environment](#5-command-line-environment)
     - [Job Control](#job-control)
     - [Pausing and backgrounding processes](#pausing-and-backgrounding-processes)
+    - [Shortcuts](#shortcuts)
     - [Terminal Multiplexers](#terminal-multiplexers)
     - [Aliases](#aliases)
     - [Dotfiles and Portability](#dotfiles-and-portability)
@@ -339,6 +340,18 @@ Note: all processes created are associated with your terminal and will die when 
 To prevent that from happening you can run the program with `nohup` (a wrapper to ignore `SIGHUP`), or use `disown` if the process has already been started.
 
 Finally, `SIGKILL` (which cannot be captured by the process) will always terminate it immediately. However, it can have bad side effects such as leaving orphaned children processes.
+
+### Shortcuts
+- Ctrl + a: Go to the beginning of the line
+- Ctrl + e: Go to the end of the line
+- Ctrl + XX: Go to the beginning of the line, and pressing Ctrl + XX again takes you back where you were.
+- Ctrl + u: Delete current line
+- Ctrl + _: Undo previous key stroke
+- Alt + f / Escape + F: Move forward, one-word
+- Alt + b / Escape + B: Move backwards, one-word
+- Alt + d: Delete all characters after the cursor
+- Alt + u: Up-case all characters after the cursor
+- Alt + t: Swap current word with the previous word
 
 ### Terminal Multiplexers
 Terminal multiplexers let you detach a current terminal session and reattach at some point later in time. Ideal for remote machines since it voids the need to use `nohup` and similar tricks
